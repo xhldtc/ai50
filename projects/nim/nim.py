@@ -135,12 +135,6 @@ class NimAI():
             res = max(res, self.q.get((tuple(state), action), 0))
         return res
 
-        # for i, x in enumerate(state):
-        #     for j in range(1, x + 1):
-        #         action = (i, j)
-        #         res = max(res, self.q.get((state, action), 0))
-        # return res
-
     def choose_action(self, state, epsilon=True):
         """
         Given a state `state`, return an action `(i, j)` to take.
